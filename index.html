@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!--
+Programmed by: https://github.com/RainbowAsteroids
+Programmed with Geany
+-->
+<html>
+    <head>
+        <title>Dippin' Dots Generator</title>
+        <style>input[type=number]{width: 80px;}</style>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <canvas id="canvas" width="200px" height="200px"  style="border:1px solid #000000;"></canvas><br>
+        <input type="checkbox" id="outline">Circle Outline<br>
+        Max Size: <input type="number" id="circleSize" value="25" min="5" onkeypress="return isNumberKey(event)"><br>
+        Canvas Size: <input type="number" id="canvasSize" value="200" min="5" onkeypress="return isNumberKey(event)"><br>
+        <button type="button" onclick="clearCanvas()">Clear Canvas</button><br>
+    </body>
+</html>
