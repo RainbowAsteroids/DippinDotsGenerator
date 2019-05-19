@@ -6,14 +6,22 @@ Programmed with Geany
 <html>
     <head>
         <title>Dippin' Dots Generator</title>
-        <style>input[type=number]{width: 80px;}</style>
+        <style>
+            input[type=number]{width: 80px;}
+            canvas {
+                border:1px solid #000000;
+                float: left;
+            }
+        </style>
         <script src="main.js"></script>
     </head>
     <body>
-        <canvas id="canvas" width="200px" height="200px"  style="border:1px solid #000000;"></canvas><br>
-        <input type="checkbox" id="outline">Circle Outline<br>
-        Max Size: <input type="number" id="circleSize" value="25" min="5" onkeypress="return isNumberKey(event)"><br>
-        Canvas Size: <input type="number" id="canvasSize" value="200" min="5" onkeypress="return isNumberKey(event)"><br>
-        <button type="button" onclick="clearCanvas()">Clear Canvas</button><br>
+        <canvas id="canvas" width="200px" height="200px"></canvas><br>
+        <div class="data">
+            <input type="checkbox" id="fade">Fade Mode<br>
+            Max Size: <input type="number" id="circleSize" value="25" min="5" onkeypress="return isNumberKey(event)"><br>
+            Canvas Size: <input type="number" id="canvasSize" value="200" min="5" onkeypress="return isNumberKey(event)"><br>
+            <button type="button" onclick="clearCanvas()">Clear Canvas</button><br>
+        </div>
     </body>
 </html>
