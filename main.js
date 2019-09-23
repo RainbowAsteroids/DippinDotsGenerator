@@ -3,7 +3,7 @@ var context;
 var circleSize;
 var canvasSize;
 var fade;
-var play = false;
+
 function drawCircle(x,y,size,color) {
     //draws a circle
     context.beginPath();
