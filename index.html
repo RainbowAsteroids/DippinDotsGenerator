@@ -11,9 +11,9 @@ Programmed with Geany
             canvas {
                 border:1px solid #000000;
                 float: left;
+                margin-right: 1em;
             }
         </style>
-        <script src="main.js"></script>
     </head>
     <body>
         <canvas id="canvas" width="200px" height="200px"></canvas><br>
@@ -23,5 +23,6 @@ Programmed with Geany
             Canvas Size: <input type="number" id="canvasSize" value="200" min="5" onkeypress="return isNumberKey(event)"><br>
             <button type="button" onclick="clearCanvas()">Clear Canvas</button><br>
         </div>
+        <script src="main.js"></script>
     </body>
 </html>
