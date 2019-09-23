@@ -85,12 +85,8 @@ function actionDelegator() {
     else {randomCircle();}
 }
 
-function setup() {
-    canvas = document.getElementById("canvas"); //the canvas in the html
-    context = canvas.getContext("2d") //the 2d drawing context
-    circleSize = document.getElementById("circleSize") //the circle size input
-    canvasSize = document.getElementById("canvasSize") //the canvas size input
-    setInterval(actionDelegator,50); //every 50 milisecs draw a random circle
-}
-
-setTimeout(setup, 350);
+canvas = document.getElementById("canvas"); //the canvas in the html
+context = canvas.getContext("2d") //the 2d drawing context
+circleSize = document.getElementById("circleSize") //the circle size input
+canvasSize = document.getElementById("canvasSize") //the canvas size input
+setInterval(actionDelegator,50); //every 50 milisecs draw a random circle
