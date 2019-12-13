@@ -63,8 +63,8 @@ function fadeMode() {
     var maxDistance = distanceFormula([0, 0], [canvas.width/2, canvas.height/2]);
     var size = randomNum(circleSize)
     var position = [randomNum((canvas.width-size)-size)+size, randomNum((canvas.height-size)-size)+size]
-    var distance = Math.abs(distanceFormula(position, [canvas.width/2, canvas.height/2]));
-    var alpha = Math.floor((distance/maxDistance)*255).toString(16);
+    // var distance = Math.abs(distanceFormula(position, [canvas.width/2, canvas.height/2]));
+    var alpha = Math.floor(randomNum(255)).toString(16);
     drawCircle(
         position[0], //x coord
         position[1], //y coord
