@@ -57,13 +57,13 @@ function isNumberKey(evt){ //definitely didn't steal this from stack overflow
     return true;
 }
 
-function distanceFormula(x,y) {return Math.floor(((y[0]-x[0])**2) + ((y[1]-x[1])**2)**.5)} //Distance formula
+function distanceFormula(x,y) {return Math.floor(((x[0]-x[1])**2) + ((y[0]-y[1])**2)**.5)} //Distance formula
 
 function fadeMode() {
     var maxDistance = distanceFormula([0, 0], [canvas.width/2, canvas.height/2]);
     var size = randomNum(circleSize)
     var position = [randomNum((canvas.width-size)-size)+size, randomNum((canvas.height-size)-size)+size]
-    var distance = distanceFormula(position, [canvas.width/2, canvas.height/2]);
+    var distance = Math.abs(distanceFormula(position, [canvas.width/2, canvas.height/2]));
     var alpha = Math.floor((distance/maxDistance)*255).toString(16);
     drawCircle(
         position[0], //x coord
